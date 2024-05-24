@@ -11,16 +11,20 @@ spring:
         profile:
           tenant-id: f4ba176e-67e7-41cf-8963-80e28bd29d4a
         app-id-uri: api://d64bbc0f-ec23-4f5a-96ed-b72a4c9af378
-        authorization-clients:
-          graph:
-            scopes:
-              - email
-              - openid
-              - profile
-              - User.Read
-        redirect-uri-template: http://localhost:8080/proxy
+#        authorization-clients:
+#          graph:
+#            scopes:
+#              - email
+#              - openid
+#              - profile
+#              - User.Read
+#        redirect-uri-template: http://localhost:8080/login/oauth2/code
 logging:
   level:
     web: debug
     org.springframework.web: trace
     org.springframework.security: trace
+
+server:
+  port: 8080
+  forward-headers-strategy: native
