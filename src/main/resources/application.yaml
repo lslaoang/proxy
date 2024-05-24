@@ -1,6 +1,8 @@
 spring:
   application:
     name: Proxy Server
+  profiles:
+    active: dev
   cloud:
     azure:
       active-directory:
