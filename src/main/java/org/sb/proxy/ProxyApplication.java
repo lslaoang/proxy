@@ -16,8 +16,9 @@ public class ProxyApplication {
 
     @GetMapping("/")
     public String hello() {
-        System.out.print(SecurityContextHolder.getContext().getAuthentication().getPrincipal());
-        return "Hello World";
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        System.out.print(principal + " ");
+        return "Hello World: \n"  + principal;
     }
 
     public static void main(String[] args) {

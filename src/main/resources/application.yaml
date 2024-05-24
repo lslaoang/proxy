@@ -6,11 +6,11 @@ spring:
       active-directory:
         enabled: true
         credential:
-          client-secret: tBi8Q~ObJsdylmCX3R21kq_d2goHk4eYravzocaS
-          client-id: d64bbc0f-ec23-4f5a-96ed-b72a4c9af378
+          client-secret: ${app.client-secret}
+          client-id: ${app.client-id}
         profile:
-          tenant-id: f4ba176e-67e7-41cf-8963-80e28bd29d4a
-        app-id-uri: api://d64bbc0f-ec23-4f5a-96ed-b72a4c9af378
+          tenant-id: ${app.tenant-id}
+        app-id-uri: ${app.uri-id}
 #        authorization-clients:
 #          graph:
 #            scopes:
@@ -19,12 +19,5 @@ spring:
 #              - profile
 #              - User.Read
 #        redirect-uri-template: http://localhost:8080/login/oauth2/code
-logging:
-  level:
-    web: debug
-    org.springframework.web: trace
-    org.springframework.security: trace
 
-server:
-  port: 8080
-  forward-headers-strategy: native
+

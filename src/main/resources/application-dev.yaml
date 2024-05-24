@@ -1,0 +1,15 @@
+app:
+  client-id: d64bbc0f-ec23-4f5a-96ed-b72a4c9af378
+  client-secret: tBi8Q~ObJsdylmCX3R21kq_d2goHk4eYravzocaS
+  tenant-id: f4ba176e-67e7-41cf-8963-80e28bd29d4a
+  uri-id: api://d64bbc0f-ec23-4f5a-96ed-b72a4c9af378
+
+server:
+  port: 8080
+  forward-headers-strategy: native
+
+logging:
+  level:
+    web: debug
+    org.springframework.web: trace
+    org.springframework.security: trace
