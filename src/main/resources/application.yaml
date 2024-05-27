@@ -2,7 +2,7 @@ spring:
   application:
     name: Proxy Server
   profiles:
-    active: dev
+    active: dev, test
   cloud:
     azure:
       active-directory:
@@ -13,13 +13,13 @@ spring:
         profile:
           tenant-id: ${app.tenant-id}
         app-id-uri: ${app.uri-id}
-#        authorization-clients:
-#          graph:
-#            scopes:
-#              - email
-#              - openid
-#              - profile
-#              - User.Read
-#        redirect-uri-template: http://localhost:8080/login/oauth2/code
+        authorization-clients:
+          graph:
+            scopes:
+              - email
+              - openid
+              - profile
 
-
+server:
+  port: 8080
+  forward-headers-strategy: native

@@ -1,8 +1,8 @@
 app:
-  client-id: d64bbc0f-ec23-4f5a-96ed-b72a4c9af378
-  client-secret: tBi8Q~ObJsdylmCX3R21kq_d2goHk4eYravzocaS
+  client-id: 5f0b5635-973f-4c1f-8de8-850f8a7f50ae
+  client-secret: Q~~8Q~d~suOcz_07comWIurF1cqSqfhrd_pXvcXP
   tenant-id: f4ba176e-67e7-41cf-8963-80e28bd29d4a
-  uri-id: api://d64bbc0f-ec23-4f5a-96ed-b72a4c9af378
+  uri-id: api://5f0b5635-973f-4c1f-8de8-850f8a7f50ae
 
 logging:
   level:
