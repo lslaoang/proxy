@@ -12,23 +12,7 @@ import org.springframework.web.servlet.view.RedirectView;
 import java.security.Principal;
 
 @SpringBootApplication
-@RestController
 public class ProxyApplication {
-
-    @GetMapping("/")
-    public RedirectView hello() {
-        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        System.out.print(principal + " ");
-
-
-        // Call GraphAPI here
-
-
-        // Authorization check here
-
-
-        return new RedirectView("/index.html");
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(ProxyApplication.class, args);
