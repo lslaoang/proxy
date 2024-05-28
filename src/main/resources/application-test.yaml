@@ -1,8 +1,9 @@
 app:
   client-id: 5f0b5635-973f-4c1f-8de8-850f8a7f50ae
-  client-secret: client-secret #Q~~8Q~d~suOcz_07comWIurF1cqSqfhrd_pXvcXP
+  client-secret: Q~~8Q~d~suOcz_07comWIurF1cqSqfhrd_pXvcXP
   tenant-id: f4ba176e-67e7-41cf-8963-80e28bd29d4a
   uri-id: api://5f0b5635-973f-4c1f-8de8-850f8a7f50ae
+  group: APP_ADMIN
 
 logging:
   level:

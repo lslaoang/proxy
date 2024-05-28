@@ -2,7 +2,7 @@ spring:
   application:
     name: Proxy Server
   profiles:
-    active: dev, test
+    active: dev
   cloud:
     azure:
       active-directory:
@@ -19,7 +19,7 @@ spring:
               - email
               - openid
               - profile
-
+              - User.Read
 server:
   port: 8080
   forward-headers-strategy: native

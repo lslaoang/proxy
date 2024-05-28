@@ -3,6 +3,7 @@ app:
   client-secret: tBi8Q~ObJsdylmCX3R21kq_d2goHk4eYravzocaS
   tenant-id: f4ba176e-67e7-41cf-8963-80e28bd29d4a
   uri-id: api://d64bbc0f-ec23-4f5a-96ed-b72a4c9af378
+  group: 67875247-77c7-4867-9ef5-9b6775db91f9
 
 logging:
   level:
